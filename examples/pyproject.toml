@@ -1,0 +1,18 @@
+[project]
+name = "examples"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "political-argumentation-rag",
+    "openai>=2.20.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+]
+
+[tool.uv.sources]
+political-argumentation-rag = { path = "../political_argumentation_rag" }

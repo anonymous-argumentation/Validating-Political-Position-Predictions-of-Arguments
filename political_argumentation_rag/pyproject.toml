@@ -1,0 +1,23 @@
+[project]
+name = "political-argumentation-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "anon", email = "anon@anon.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-community>=0.4.1",
+    "neo4j>=6.1.0",
+    "sentence-transformers>=5.2.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.7,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "political_argumentation_rag",
+]

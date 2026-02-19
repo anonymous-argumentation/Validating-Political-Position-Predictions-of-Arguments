@@ -1,0 +1,44 @@
+{\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llcccc}
+\toprule
+Model & Subset & $d_\text{footrule}$ & $d_\tau$ & $\alpha_o$ & Macro-F1 \\
+\midrule
+\multirow{2}{*}{Human (agg)} & $\mathcal{P}$ & 1.000 & 1.000 & 1.000 & 1.000 \\
+ & $\mathcal{P}_{1,1}$ & 1.000 & 1.000 & 1.000 & 1.000 \\
+\multirow{2}{*}{Human (left)} & $\mathcal{P}$ & 0.904 & 0.934 & 0.974 & 0.827 \\
+ & $\mathcal{P}_{1,1}$ & 0.867 & 0.907 & 0.956 & 1.000 \\
+\multirow{2}{*}{Human (right)} & $\mathcal{P}$ & 0.886 & 0.922 & 0.966 & 0.790 \\
+ & $\mathcal{P}_{1,1}$ & 0.873 & 0.914 & 0.960 & 1.000 \\
+\midrule
+\multirow{2}{*}{Ensemble 1} & $\mathcal{P}$ & 0.726 & 0.810 & 0.808 & 0.603 \\
+ & $\mathcal{P}_{1,1}$ & 0.721 & 0.800 & 0.789 & 0.492 \\
+\multirow{2}{*}{Ensemble 2} & $\mathcal{P}$ & 0.721 & 0.804 & 0.803 & 0.622 \\
+ & $\mathcal{P}_{1,1}$ & 0.682 & 0.782 & 0.760 & 0.617 \\
+\multirow{2}{*}{Ensemble 3} & $\mathcal{P}$ & 0.728 & 0.806 & 0.799 & 0.583 \\
+ & $\mathcal{P}_{1,1}$ & 0.657 & 0.756 & 0.692 & 0.492 \\
+\midrule
+\multirow{2}{*}{o3 Mini} & $\mathcal{P}$ & 0.684 & 0.779 & 0.766 & 0.644 \\
+ & $\mathcal{P}_{1,1}$ & 0.779 & 0.837 & 0.852 & \textbf{0.723} \\
+\multirow{2}{*}{DeepSeek-R1} & $\mathcal{P}$ & 0.691 & 0.781 & 0.753 & 0.595 \\
+ & $\mathcal{P}_{1,1}$ & 0.774 & 0.840 & 0.849 & 0.617 \\
+\multirow{2}{*}{GPT 4.5} & $\mathcal{P}$ & 0.696 & \textbf{0.793} & \textbf{0.783} & 0.630 \\
+ & $\mathcal{P}_{1,1}$ & \textbf{0.806} & \textbf{0.852} & 0.849 & 0.492 \\
+\multirow{2}{*}{Qwen QwQ} & $\mathcal{P}$ & 0.661 & 0.770 & 0.747 & 0.621 \\
+ & $\mathcal{P}_{1,1}$ & 0.760 & 0.819 & 0.813 & 0.673 \\
+\multirow{2}{*}{GPT 4o Mini} & $\mathcal{P}$ & 0.661 & 0.767 & 0.730 & \textbf{0.645} \\
+ & $\mathcal{P}_{1,1}$ & 0.780 & 0.829 & 0.827 & 0.570 \\
+\multirow{2}{*}{Claude 3.5 Haiku} & $\mathcal{P}$ & 0.679 & 0.772 & 0.734 & 0.640 \\
+ & $\mathcal{P}_{1,1}$ & 0.785 & 0.842 & \textbf{0.858} & 0.483 \\
+\multirow{2}{*}{DeepSeek-V3} & $\mathcal{P}$ & \textbf{0.698} & 0.777 & 0.739 & 0.595 \\
+ & $\mathcal{P}_{1,1}$ & 0.753 & 0.819 & 0.827 & 0.484 \\
+\multirow{2}{*}{Gemini 1.5 Pro} & $\mathcal{P}$ & 0.612 & 0.734 & 0.655 & 0.610 \\
+ & $\mathcal{P}_{1,1}$ & 0.743 & 0.806 & 0.778 & 0.585 \\
+\midrule
+\multirow{2}{*}{Random Baseline} & $\mathcal{P}$ & 0.333 & 0.500 & 0.000 & 0.500 \\
+ & $\mathcal{P}_{1,1}$ & 0.333 & 0.500 & 0.000 & 0.500 \\
+\multirow{2}{*}{Worst-case Baseline} & $\mathcal{P}$ & 0.000 & 0.000 & -1.000 & 0.000 \\
+ & $\mathcal{P}_{1,1}$ & 0.000 & 0.000 & -1.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+}
